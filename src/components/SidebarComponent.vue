@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import MenuItemWithIcon from './MenuItemWithIcon.vue'
-import { HomeIcon, BookOpenIcon, UserGroupIcon, PhotoIcon, CogIcon, LifebuoyIcon } from '@heroicons/vue/24/solid'
+import { HomeIcon, BookOpenIcon, UserGroupIcon, PhotoIcon, CogIcon, LifebuoyIcon, ShareIcon } from '@heroicons/vue/24/solid'
 </script>
 
 <template>
@@ -30,6 +30,12 @@ import { HomeIcon, BookOpenIcon, UserGroupIcon, PhotoIcon, CogIcon, LifebuoyIcon
           title="Галерея"
           href="/gallery"
           :iconComponent="PhotoIcon"
+        />
+
+        <MenuItemWithIcon
+          title="Поделиться"
+          href="/links"
+          :iconComponent="ShareIcon"
         />
       </ul>
 
